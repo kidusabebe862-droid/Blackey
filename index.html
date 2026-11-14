@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLACK KEY Gaming</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080b0a;
+  color: white;
+  font-family: Arial;
+}
+
+header {
+  background: #101914;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 2px solid #00ff77;
+}
+
+header h1 {
+  color: #00ff77;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.hero h2 {
+  color: #00ff77;
+  font-size: 28px;
+}
+
+.search {
+  width: 90%;
+  display: block;
+  margin: 20px auto;
+  padding: 15px;
+  background: #151d19;
+  color: white;
+  border: 1px solid #00ff77;
+  border-radius: 10px;
+}
+
+.games {
+  padding: 20px;
+}
+
+.games h2 {
+  color: #00ff77;
+}
+
+.card {
+  background: #151d19;
+  padding: 22px;
+  margin: 18px 0;
+  border: 1px solid #254b36;
+  border-radius: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+.card p {
+  color: #aaa;
+}
+
+.card a {
+  display: inline-block;
+  background: #00ff77;
+  color: black;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rating {
+  margin: 15px 0;
+  color: #00ff77;
+}
+
+.rating button {
+  background: #080b0a;
+  color: #00ff77;
+  border: 1px solid #00ff77;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
+</style>
+</head>
+<body>
+
+<heder>
+  <h1>🔑 BLACK KEY</h1>
+<p>UNLOCK YOUR GAMING WORLD</p>
+</heder>
+
+<nav>
+<a href="#">Home</a>
+<a href="#games">Games</a>
+<a href="#about">About</a>
+</nav>
+
+<section class="hero">
+<h2>WELCOME GAMERS!</h2>
+<p>Discover Your Favorite Games</p>
+</section>
+
+<input
+class="search"
+id="search"
+placeholder="🔍 Search Games..."
+oninput="searchGames()">
+
+<section class="games" id="games">
+<h2>🎮 POPULAR GAMES</h2>
+
+<div class="card">
+<h3>⚽ eFootball</h3>
+<p>Football gaming experience.</p>
+<div class="rating">
+<button onclick="rate(this,1)">⭐1</button>
+<button onclick="rate(this,2)">⭐2</button>
+<button onclick="rate(this,3)">⭐3</button>
+<button onclick="rate(this,4)">⭐4</button>
+<button onclick="rate(this,5)">⭐5</button>
+<p></p>
+</div>
+<a href="https://play.google.com/store/search?q=eFootball&c=apps">Get Game</a>
+</div>
+
+<div class="card">
+<h3>🚗 Car Games</h3>
+<p>Explore exciting car games.</p>
+<div class="rating">
+<button onclick="rate(this,5)">⭐5</button>
+<p></p>
+</div>
+<a href="https://play.google.com/store/search?q=car+games&c=apps">Get Game</a>
+</div>
+
+<div class="card">
+<h3>🚛 Truck Simulator</h3>
+<p>Enjoy truck driving games.</p>
+<div class="rating">
+<button onclick="rate(this,5)">⭐5</button>
+<p></p>
+</div>
+<a href="https://play.google.com/store/search?q=truck+simulator&c=apps">Get Game</a>
+</div>
+
+<div class="card">
+<h3>🏎️ Racing Games</h3>
+<p>Experience exciting racing.</p>
+<div class="rating">
+<button onclick="rate(this,5)">⭐5</button>
+<p></p>
+</div>
+<a href="https://play.google.com/store/search?q=racing+games&c=apps">Get Game</a>
+</div>
+
+<div class="card">
+<h3>⚽ Dream League Soccer</h3>
+<p>Build your football team.</p>
+<div class="rating">
+<button onclick="rate(this,5)">⭐5</button>
+<p></p>
+</div>
+<a href="https://play.google.com/store/search?q=dream+league+soccer&c=apps">Get Game</a>
+</div>
+
+</section>
+
+<section class="hero" id="about"><section class="games">
+<h2>🔥 TRENDING GAMES</h2>
+
+<div class="card">
+<h3>🔥 PUBG Mobile</h3>
+<p>Battle and survival gaming.</p>
+<a href="https://play.google.com/store/search?q=PUBG+Mobile&c=apps">
+Get Game
+</a>
+</div>
+
+<div class="card">
+<h3>🏎️ Asphalt 9</h3>
+<p>Enjoy exciting racing games.</p>
+<a href="https://play.google.com/store/search?q=Asphalt+Legends&c=apps">
+Get Game
+</a>
+</div>
+
+<div class="card">
+<h3>🎮 Roblox</h3>
+<p>Explore amazing gaming worlds.</p>
+<a href="https://play.google.com/store/search?q=Roblox&c=apps">
+Get Game
+</a>
+</div>
+
+</section>
+<h2>ABOUT BLACK KEY</h2>
+<p>Your Gaming World Starts Here!</p>
+</section>
+
+<footer>
+<p>© 2026 BLACK KEY Gaming</p>
+<p>All Rights Reserved.</p>
+</footer>
+
+<script>
+function searchGames() {
+  let value = document.getElementById("search").value.toLowerCase();
+
+  document.querySelectorAll(".card").forEach(card => {
+    card.style.display =
+      card.innerText.toLowerCase().includes(value)
+      ? "block" : "none";
+  });
+}
+
+  let result = button.parentElement.querySelector("p");
+function rate(button,stars) {
+  result.innerText = "Your rating: " + stars + " ⭐";
+}
+</script>
+
+</body>
+</html>
